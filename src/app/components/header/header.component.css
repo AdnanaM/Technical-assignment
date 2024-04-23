@@ -1,0 +1,139 @@
+.navbar {
+    height: 65px;
+    background-color: #212121;
+    padding: 0 47px;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .navbar .navbar-brand {
+    color: #fff !important;
+    margin-right: 2rem;
+    font-size: 24px;
+  }
+  
+  .navbar .navbar-nav .nav-item {
+    margin-right: 10px;
+  }
+  
+  .navbar .navbar-nav .nav-link {
+    color: #fff !important;
+    font-size: 17px;
+    font-weight: 700;
+  }
+  
+  @media (max-width: 640px) {
+    .navbar .listMenu {
+      display: none;
+    }
+  
+    .navbar {
+      height: auto;
+      padding: 0 15px;
+    }
+  }
+  
+  .sidebar-nav-btn {
+    display: none;
+  }
+  
+  @media (max-width: 640px) {
+    .sidebar-nav-btn {
+      display: block;
+      width: 35px;
+      height: 35px;
+      margin-left: 10px;
+    }
+  }
+  
+  .sidebarNav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  
+ 
+  .sidebarNav .menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: calc(100% - 60px);
+    width: 100%;
+  }
+  
+  .sidebarNav .sidebarMenu {
+    margin: 10px 0;
+    position: relative;
+  }
+  
+  .sidebarNav .sidebarMenu a {
+    font-size: 2rem;
+    letter-spacing: 0.4px;
+    color: #fff !important;
+    margin-left: 40px;
+  }
+  
+  .sidebarNav .sidebarMenu img {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+  }
+  
+  .form {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+  }
+  
+  .form input[type='text'] {
+    flex: 1;
+    height: 6rem;
+    padding: 2.1rem 1.5rem;
+    font-size: 1.6rem;
+    color: #fff;
+    background: none;
+    border: 0;
+    outline: 0;
+  }
+
+    @media (min-width: 1200px) {
+        .form input[type='text']{
+            height: 8rem;
+            padding: 3.1rem 5rem;
+        }  
+    }
+  
+  .form button {
+    display: flex;
+    align-items: center;
+    padding: 0 1.5rem;
+    background: none;
+  }
+
+  @media (min-width: 1200px) {
+    .form button{
+        padding: 0 5rem;
+    }
+  }
+  
+  .field {
+    display: flex;
+    background-color: #202124;
+  }
+
+  .ml-auto{
+    margin-left: auto!important;
+  }
+
+  img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    -ms-interpolation-mode: bicubic;
+    border-style: none
+}
+
+  

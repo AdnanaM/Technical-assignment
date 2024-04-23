@@ -1,0 +1,23 @@
+.float-right {
+    float: right!important
+}
+
+a {
+    text-decoration: none!important;
+    color: #dc4666!important;
+    background-color: transparent
+}
+
+.mat-icon {
+    background-repeat: no-repeat;
+    display: inline-block;
+    fill: currentColor;
+    height: 24px;
+    width: 24px;
+}
+
+.cross-icon {
+    font-size: 25px;
+    font-weight: 100;
+}
+

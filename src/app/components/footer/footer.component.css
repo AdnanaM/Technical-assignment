@@ -1,0 +1,35 @@
+.footer {
+    background-color: #212121;
+    padding: 1rem 0rem 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .footer p {
+    margin-bottom: 5px;
+    font-size: 15px;
+    line-height: 1;
+  }
+
+  p {
+    font-family: Nunito,sans-serif;
+    font-size: 62.5%;
+    color: #abb7c4;
+    font-weight: 300;
+    text-transform: none
+}
+  
+  .footer .list-inline li a {
+    width: 4rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer .list-inline li a svg {
+    transition: all .3s ease-in-out;
+  }
+  
+  .footer .list-inline li a svg:hover {
+    fill: #fff;
+  }

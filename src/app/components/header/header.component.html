@@ -1,0 +1,57 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" [routerLink]="['/']">MovieNet</a>
+    <ul class="navbar-nav ml-auto listMenu">
+
+        <li class="nav-item" *ngIf="userLogged">
+            <a class="nav-link">Hello, {{userLogged.data.name}}</a>
+            <!-- <img [src]="'http://localhost:3000/' + userLogged.data.photo" alt="User Photo" style="width: 10%;"><br><br> -->
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" [routerLink]="['/']" routerLinkActive="router-link-active">Home
+                <span class="sr-only">(current)</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/movies']" routerLinkActive="router-link-active">Movies</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/tv']" routerLinkActive="router-link-active">TV Shows</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/genres']" routerLinkActive="router-link-active">Genres</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/signup']" routerLinkActive="router-link-active">Signup</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/login']" routerLinkActive="router-link-active">Login</a>
+        </li>
+
+    </ul>
+    <span class="sidebar-nav-btn"  pButton icon="pi pi-plus" label="Show" (click)="leftSidebar = true"><img src="assets/images/menu.svg"></span>
+</nav>
+
+<p-sidebar [(visible)]="leftSidebar" position="left" [baseZIndex]="10000" style="background-color: #212121;">
+    <div class="sidebarNav">
+        <div class="menu-container">
+            <div class="sidebarMenu">
+                <img src="assets/images/home.svg">
+                <a class="sidebar-nav-link" [routerLink]="['/']" routerLinkActive="router-link-active">Home
+                    <span class="sr-only">(current)</span>
+                </a>
+            </div>
+            <div class="sidebarMenu">
+                <img src="assets/images/videos.svg">
+                <a class="sidebar-nav-link" [routerLink]="['/movies']" routerLinkActive="router-link-active">Movies</a>
+            </div>
+            <div class="sidebarMenu">
+                <img src="assets/images/tv.svg">
+                <a class="sidebar-nav-link" [routerLink]="['/tv']" routerLinkActive="router-link-active">TV Shows</a>
+            </div>
+            <div class="sidebarMenu genre_">
+                <img src="assets/images/tripod.svg">
+                <a class="sidebar-nav-link" [routerLink]="['/genres']" routerLinkActive="router-link-active">Genres</a>
+            </div>
+        </div>
+    </div>
+</p-sidebar>
